@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Apex Classes -->
+    <types>
+        <members>AccountLogger</members>
+        <members>AccountManagerController</members>
+        <members>AccountSelector</members>
+        <members>AccountService</members>
+        <members>AccountServiceSolid</members>
+        <members>AccountTriggerHandler</members>
+        <members>AccountValidator</members>
+        <members>BaseTriggerHandler</members>
+        <members>ContactCreatorController</members>
+        <members>CustomHeaderCallout</members>
+        <members>EmailService</members>
+        <members>IAccountValidator</members>
+        <members>IEmailService</members>
+        <members>ILogger</members>
+        <members>JwtBearerService</members>
+        <members>LoggingDecorator</members>
+        <members>MockerApiService</members>
+        <members>MockerCalloutService</members>
+        <members>TriggerDispatcher</members>
+        <members>TriggerHandlerFactory</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- Lightning Web Components -->
+    <types>
+        <members>accountManager</members>
+        <members>contactCreator</members>
+        <members>errorPanel</members>
+        <name>LightningComponentBundle</name>
+    </types>
+
+    <!-- Custom Object -->
+    <types>
+        <members>Account__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <!-- Version -->
+    <version>60.0</version>
+
+</Package>
