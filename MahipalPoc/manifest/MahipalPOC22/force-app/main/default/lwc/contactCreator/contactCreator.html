@@ -1,0 +1,42 @@
+<template>
+    <lightning-card title="Create Contact">
+    <!-- Loading -->
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template>
+        <!-- Show Account Name -->
+        <template if:true={accountName}>
+            <div class="slds-p-around_small slds-text-heading_small">
+                Create Contact for:
+                <strong>{accountName}</strong>
+            </div>
+        </template>
+
+        <!-- Form -->
+        <lightning-input
+            label="First Name"
+              name="firstName"
+            onchange={handleChange}
+           >
+            
+        </lightning-input>
+
+        <lightning-input
+            label="Last Name"
+             name="lastName"
+            onchange={handleChange}>
+        </lightning-input>
+
+        <lightning-input
+            label="Email"
+              name="email"
+            onchange={handleChange}>
+        </lightning-input>
+
+        <lightning-button
+            label="Create"
+            onclick={handleCreate}>
+        </lightning-button>
+
+    </lightning-card>
+</template>
